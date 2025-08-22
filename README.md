@@ -317,13 +317,13 @@ Number:             5678901234567890123456
 
   | ESP32-S3 Dev Board | SPI ST7789 1.54” 240×240 TFT |
   |-------------------:|------------------------------|
-  |     GPIO42         | 8. BLK &nbsp; BackLight        (BL) |
-  |     GPIO41         | 7. CS  &nbsp;&nbsp; Chip Select      (CS) |
-  |     GPIO40         | 6. RS  &nbsp;&nbsp; Data/Command     (DC) |
-  |     GPIO45         | 5. RES &nbsp; TFT Reset       (RST) |
-  |     GPIO47         | 4. SDA &nbsp; SPI Data       (MOSI) |
-  |     GPIO21         | 3. SCL &nbsp; SPI Clock      (SCLK) |
-  |     3V3            | 2. VDD (Power)               |
+  |     GPIO42         | 8. BLK &nbsp; BackLight (BL) |
+  |     GPIO41         | 7. CS  &nbsp;&nbsp; Chip Select (CS) |
+  |     GPIO40         | 6. RS  &nbsp;&nbsp; Data/Command (DC) |
+  |     GPIO45         | 5. RES &nbsp; TFT Reset (RST) |
+  |     GPIO47         | 4. SDA &nbsp; SPI Data  (MOSI) |
+  |     GPIO21         | 3. SCL &nbsp; SPI Clock (SCLK) |
+  |     3V3            | 2. VDD &nbsp; (Power)        |
   |     GND            | 1. GND                       |
 
 
@@ -337,11 +337,11 @@ Number:             5678901234567890123456
 
   | ESP32-S3 Dev Board  | I²S INMP441 Microphone    |
   |--------------------:|---------------------------|
-  |     GND  (LOW=Left) | 1. L/R Left/Right Channel |
-  |     GPIO4           | 2. WS  Word/Data Select   |
-  |     GPIO5           | 3. SCK Serial Data Clock  |
-  |     GPIO6           | 4. SD  Serial Data Out    |
-  |     3V3             | 5. VDD (Power)            |
+  |     GND  (LOW=Left) | 1. L/R &nbsp; Left/Right Channel |
+  |     GPIO4           | 2. WS  &nbsp;&nbsp; Word/Data Select   |
+  |     GPIO5           | 3. SCK &nbsp; Serial Data Clock  |
+  |     GPIO6           | 4. SD  &nbsp;&nbsp; Serial Data Out    |
+  |     3V3             | 5. VDD &nbsp; (Power)            |
   |     GND             | 6. GND                    |
 
    > [!TIP]
