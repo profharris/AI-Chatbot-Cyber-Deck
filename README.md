@@ -2,7 +2,7 @@
 https://docs.keyestudio.com/projects/ESP32S3_LCD154/en/latest/LCD154/LCD154.html<br/>
 https://github.com/78/xiaozhi-esp32
 
-### Design follows inspirations from:
+### This Design follows inspirations from:
  1. ESP32-S3 1.54in TFT Expansion Board with Speaker
  2. XIAOZHI AI Voice Chatbox ESP32-S3-N16R8
  3. Xiao Zhi AI Chatbot Breadboard DIY Kit
@@ -16,9 +16,10 @@ https://github.com/78/xiaozhi-esp32
  6. Buttons [Vol_UP ⏶], [OK ⏴], [Volume ⏷]
  7. WS2812 NeoPixel ***RGB LED*** (RGB_BUILTIN)
 
+<br/>
 ### MCU Development Board (ESP32-S3-WROOM-1):
 
-#### Espressif ESP-S3-DevKitC-1 — &nbsp;44-pins, 22-pin Headers
+#### Espressif ESP-S3-DevKitC-1 &nbsp;—&nbsp; &nbsp;44-pins, 22-pin Headers
 ```
 ESP32-S3-WROOM-1 “pin-compliant” Development boards:     Pins   RGB LEDs
                                                                 LED
@@ -28,9 +29,10 @@ ESP32-S3-WROOM-1 “pin-compliant” Development boards:     Pins   RGB LEDs
  4. WaveShare ESP32-S3-DEV-KIT-N8R8    (DevKitC-1 clone)  44     ✓  1+RGB
 
  5. FREENOVE ESP32-S3-WROOM-Lite (no camera)              40     ✓  4+RGB
-    (40-pin boards plug in skipping the top & bottom rows of pins.)
+    _(40-pin boards plug in skipping the top & bottom rows of pins.)_
 ```
 > [!IMPORTANT]
+> MCU Development Board _(links)_
 > [1. Espressif ESP32-S3-DevKitC-1](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/1.%20ESP32-S3-DevKitC-1%20(44-pins).jpg)<br/>
 > [2. YD-ESP32-S3 (ESP32-S3-WROOM-1 Dev)](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/2.%20YD-ESP32-S3%20(ESP32-S3-DevKitC-1%20clone)%20(44-pins).jpg)<br/>
 > [3. WeAct Studio ESP32-S3-A/B Core](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/3.%20WeAct%20Studio%20ESP32-S3-AB%20Core%20(44-pins).jpg)<br/>
@@ -90,11 +92,11 @@ ESP32-S3 Pins: 0…18 GPIO, 19…20 D+/D-, 21 GPIO, 22…25 Do Not Exist,     GP
 
 ## 【2】 Vero-Stripboard Layout and Design:
 
-Based on a Vero-Stripboard,&nbsp; all horizontal connections are the copper
-traces of the Veroboard _(with two small exceptions)_.&nbsp; All vertical
-connections are only _straight wires_ on the top of the Veroboard,&nbsp;
-soldered on the back.&nbsp; Obviously,&nbsp; to prevent cross-wires & shorts,
-&nbsp;‘cuts’ must be made to the horizontal Veroboard copper traces as
+This project is based on a Vero-Stripboard,&nbsp; all horizontal connections are 
+the copper traces on the underside of the Veroboard _(with two small exceptions)_.
+&nbsp; All vertical connections are only _straight wires_ on the top of the 
+Veroboard,&nbsp; soldered on the back.&nbsp; Obviously,&nbsp; to prevent cross-wires 
+& shorts, &nbsp;‘cuts’ must be made to the horizontal Veroboard copper traces as
 denoted by &nbsp;“X”&nbsp; in the diagrams delow.
 
 The majority of the working GPIO Pins (not counting 3V3 and GND) for the
@@ -111,8 +113,8 @@ around ‘cuts’ made to the Veroboard,&nbsp; for the _LCD 1.54in 240RGB×240_
 ‘«’ in the Veroboard Right-side diagram below.<br>
 ¦µ×÷±¡¿¸‚„…ƒ¬–—·•‹›«»¨¯´ˆ˜‘’“”¹²³ª°®™©¢çÇÒÓÔÕÖØÞ⩇ðòóôõöø¤§†‡ÎÏßíìîïÐ
 
-The 6.5×14.5cm Vero-Stripboard is 56 _2.54mm spaced holes_ horizontally
-and 24 _2.54mm spaced holes_ vertically.&nbsp; The 44-pin **ESP32-S3-WROOM-1**
+The 6.5×14.5cm Vero-Stripboard is 56 _2.54mm (0.1") spaced holes_ horizontally
+and 24 _2.54mm (0.1") spaced holes_ vertically.&nbsp; The 44-pin **ESP32-S3-WROOM-1**
 based Development Boards _(ESP32-S3-DevKitC-1 compatible)_ are 22 pins tall.&nbsp;
 These Development Boards are mounted with their lower pins lined up with
 the last/lowest row on the Veroboard,&nbsp; leaving the top two rows open.
@@ -244,9 +246,9 @@ Number: 1234567890123456789012345678 ESP32-S3-WROOM-1   56-pins Wide
 08      ¦◘ GAIN |ѳ••       Χ• ←⩇⩇⩇ 6. IO6   I²S INMP441  SD   •Blue•
 09      ¦◘ DIN  |o |          ←⩇⩇⩇ 7. IO7   I²S MAX98357 DIN
 10      ¦– BCLK |o |          ←⩇⩇⩇ 8. IO15  I²S MAX98357 BCLK
-11      ¦◯LRC  |o |          ←⩇⩇⩇ 9. IO16  I²S MAX98357 LRC
+11      ¦◯LRC  |o |  I²C     ←⩇⩇⩇ 9. IO16  I²S MAX98357 LRC
 12      ¯¯¯¯¯¯¯¯|¯ | .----.    ⩇⩇⩇10.◌IO17
-13              |  | ¦I²C ¦    ⩇⩇⩇11.◌IO18
+13              |  | ¦    ¦    ⩇⩇⩇11.◌IO18
 14              |  ••¦ ѳX•¦GND←⩇⩇⩇12. IO8   I²C SDA •Blue•
 15      microSD •-• |¦ ѳX|¦3V3 ⩇⩇⩇13.◌IO3
 16        .-------| |¦Xѳ •XSDA ⩇⩇⩇14.◌IO46I
@@ -322,7 +324,7 @@ Number:             5678901234567890123456
   |     GPIO40         | 6. RS  &nbsp;&nbsp; Data/Command (DC) |
   |     GPIO45         | 5. RES &nbsp; TFT Reset (RST) |
   |     GPIO47         | 4. SDA &nbsp; SPI Data  (MOSI) |
-  |     GPIO21         | 3. SCL &nbsp; SPI Clock (SCLK) |
+  |     GPIO21         | 3. SCL &nbsp;&nbsp; SPI Clock (SCLK) |
   |     3V3            | 2. VDD &nbsp; (Power)        |
   |     GND            | 1. GND                       |
 
@@ -351,12 +353,12 @@ Number:             5678901234567890123456
    
    > [!NOTE]
    > Features:
-   >> Digital I2S interface with 24-bit accurate data
-   >> High SNR of 61dBA
-   >> High sensitivity of -26dBFS
-   >> Consistent frequency response from 60Hz to 15kHz
-   >> Low power consumption, low current draw of 1.4mA
-   >> High PSR of -72 dBFS
+   >> Digital I2S interface with 24-bit accurate data<br/>
+   >> High SNR of 61dBA<br/>
+   >> High sensitivity of -26dBFS<br/>
+   >> Consistent frequency response from 60Hz to 15kHz<br/>
+   >> Low power consumption, low current draw of 1.4mA<br/>
+   >> High PSR of -72 dBFS<br/>
 
 > [INMP441 I²S MEMS Mic Wiring Diagram](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/INMP441%20I%C2%B2S%20MEMS%20Mic%20Wiring%20Diagram.png)
 
