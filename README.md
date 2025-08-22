@@ -340,23 +340,23 @@ Number:             5678901234567890123456
   |     GND  (LOW=Left) | 1. L/R &nbsp; Left/Right Channel |
   |     GPIO4           | 2. WS  &nbsp;&nbsp; Word/Data Select   |
   |     GPIO5           | 3. SCK &nbsp; Serial Data Clock  |
-  |     GPIO6           | 4. SD  &nbsp;&nbsp; Serial Data Out    |
+  |     GPIO6           | 4. SD  &nbsp;&nbsp;&nbsp; Serial Data Out    |
   |     3V3             | 5. VDD &nbsp; (Power)            |
   |     GND             | 6. GND                    |
 
    > [!TIP]
    > The `L/R pin` &nbsp;(Left/Right) Channel Selection works as follows:<br/>
-   >> LEFT &nbsp;– connect L/R to GND.<br/>
+   >> LEFT &nbsp;&nbsp; – connect L/R to GND.<br/>
    >> RIGHT – connect L/R to VDD.
    
    > [!NOTE]
    > Features:
-   > Digital I2S interface with 24-bit accurate data
-   > High SNR of 61dBA
-   > High sensitivity of -26dBFS
-   > Consistent frequency response from 60Hz to 15kHz
-   > Low power consumption, low current draw of 1.4mA
-   > High PSR of -72 dBFS
+   >> Digital I2S interface with 24-bit accurate data
+   >> High SNR of 61dBA
+   >> High sensitivity of -26dBFS
+   >> Consistent frequency response from 60Hz to 15kHz
+   >> Low power consumption, low current draw of 1.4mA
+   >> High PSR of -72 dBFS
 
 > [INMP441 I²S MEMS Mic Wiring Diagram](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/INMP441%20I%C2%B2S%20MEMS%20Mic%20Wiring%20Diagram.png)
 
