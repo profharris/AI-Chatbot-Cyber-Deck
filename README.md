@@ -363,7 +363,7 @@ Number:             5678901234567890123456
 > [INMP441 I²S MEMS Mic Wiring Diagram](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/INMP441%20I%C2%B2S%20MEMS%20Mic%20Wiring%20Diagram.png)
 
 >**Download:**&nbsp; [INMP441-I2S-Mic-sample.ino &nbsp; (Visual “Audio Waveforms”)](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/code/INMP441-I2S-Mic-sample/INMP441-I2S-Mic-sample.ino)
-<br/>
+<hr><br/>
 
  3. Wiring between ESP32-S3-WROOM-1 Development Board and the &nbsp; ***I²S MAX98357A Amplifier/Speaker:***
 
@@ -371,11 +371,11 @@ Number:             5678901234567890123456
   |-------------------:|---------------------------------|
   |    3V3             | 1. VIN                          |
   |    GND             | 2. GND                          |
-  |    VIN (0Ω = Left) | 3. SD   (L/R Channel Select)    |
-  |    GND (12dB Gain) | 4. GAIN (Signal Amp)            |
-  |    GPIO7           | 5. DIN  Digital Signal In       |
-  |    GPIO15          | 6. BCLK Bit Clock               |
-  |    GPIO16          | 7. LRC  Left Right Clock        |
+  |    VIN _(0Ω = Left)_ | 3. SD   &nbsp;&nbsp;&nbsp; (L/R Channel Select)    |
+  |    GND _(12dB Gain)_ | 4. GAIN &nbsp; (Signal Amp)            |
+  |    GPIO7           | 5. DIN  &nbsp;&nbsp; Digital Signal In       |
+  |    GPIO15          | 6. BCLK &nbsp; Bit Clock               |
+  |    GPIO16          | 7. LRC  &nbsp;&nbsp; Left Right Clock        |
   |                    |                                 |
   |    Audio ⧾         | Speaker Positive  (⧾)           |
   |    Audio ⧿         | Speaker Negative  (⧿)           |
