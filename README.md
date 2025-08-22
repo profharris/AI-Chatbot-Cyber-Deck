@@ -1,6 +1,3 @@
-# AI-Chatbot-Cyber-Deck
-AI Chatbot Cyber Deck, DIY version compatible with "ESP32-S3 1.54in TFT Expansion Board with Speaker", "XIAOZHI AI Voice Chatbox ESP32-S3-N16R8" and "Xiao Zhi AI Chatbot Breadboard DIY Kit."
-
 # AI Chatbot Cyber Deck
 https://docs.keyestudio.com/projects/ESP32S3_LCD154/en/latest/LCD154/LCD154.html<br/>
 https://github.com/78/xiaozhi-esp32
@@ -111,7 +108,7 @@ The two horizontal connection exceptions,&nbsp; made on the bottom of the
 Veroboard,&nbsp; are for the _Button pins_ GPIO38 and GPIO39 to connect
 around ‘cuts’ made to the Veroboard,&nbsp; for the _LCD 1.54in 240RGB×240_
 8-pin header.&nbsp; These Horzontal connect wires are denoted by ‘»’ and
-‘«’ in the Veroboard Right-side diagram below.
+‘«’ in the Veroboard Right-side diagram below.<br>
 ¦µ×÷±¡¿¸‚„…ƒ¬–—·•‹›«»¨¯´ˆ˜‘’“”¹²³ª°®™©¢çÇÒÓÔÕÖØÞ⩇ðòóôõöø¤§†‡ÎÏßíìîïÐ
 
 The 6.5×14.5cm Vero-Stripboard is 56 _2.54mm spaced holes_ horizontally
@@ -320,12 +317,12 @@ Number:             5678901234567890123456
 
   | ESP32-S3 Dev Board | SPI ST7789 1.54” 240×240 TFT |
   |-------------------:|------------------------------|
-  |     GPIO42         | 8. BLK BackLight        (BL) |
-  |     GPIO41         | 7. CS  Chip Select      (CS) |
-  |     GPIO40         | 6. RS  Data/Command     (DC) |
-  |     GPIO45         | 5. RES TFT Reset       (RST) |
-  |     GPIO47         | 4. SDA SPI Data       (MOSI) |
-  |     GPIO21         | 3. SCL SPI Clock      (SCLK) |
+  |     GPIO42         | 8. BLK &nbsp; BackLight        (BL) |
+  |     GPIO41         | 7. CS  &nbsp;&nbsp; Chip Select      (CS) |
+  |     GPIO40         | 6. RS  &nbsp;&nbsp; Data/Command     (DC) |
+  |     GPIO45         | 5. RES &nbsp; TFT Reset       (RST) |
+  |     GPIO47         | 4. SDA &nbsp; SPI Data       (MOSI) |
+  |     GPIO21         | 3. SCL &nbsp; SPI Clock      (SCLK) |
   |     3V3            | 2. VDD (Power)               |
   |     GND            | 1. GND                       |
 
@@ -449,4 +446,3 @@ Number:             5678901234567890123456
 ## 【4】 Testing and coding Examples:
 
 —————————————————————————————————————————————————————————————
-
