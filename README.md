@@ -371,7 +371,7 @@ Number:             5678901234567890123456
   |-------------------:|---------------------------------|
   |    3V3             | 1. VIN                          |
   |    GND             | 2. GND                          |
-  |    VIN _(0Ω = Left)_ | 3. SD  &nbsp;&nbsp;&nbsp;&nbsp; (L/R Channel Select)    |
+  |    VIN _(0Ω = Left)_ | 3. SD  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (L/R Channel Select)    |
   |    GND _(12dB Gain)_ | 4. GAIN &nbsp; (Signal Amp)            |
   |    GPIO7           | 5. DIN  &nbsp;&nbsp;&nbsp; Digital Signal In       |
   |    GPIO15          | 6. BCLK &nbsp; Bit Clock               |
