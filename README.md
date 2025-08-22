@@ -92,10 +92,10 @@ ESP32-S3 Pins: 0…18 GPIO, 19…20 D+/D-, 21 GPIO, 22…25 Do Not Exist,     GP
 
 ## 【2】 Vero-Stripboard Layout and Design:
 
-This project is based on a Vero-Stripboard,&nbsp; all horizontal connections are 
+This project is based on a Vero-Stripboard,&nbsp; all horizontal connections are
 the copper traces on the underside of the Veroboard _(with two small exceptions)_.
-&nbsp; All vertical connections are only _straight wires_ on the top of the 
-Veroboard,&nbsp; soldered on the back.&nbsp; Obviously,&nbsp; to prevent cross-wires 
+&nbsp; All vertical connections are only _straight wires_ on the top of the
+Veroboard,&nbsp; soldered on the back.&nbsp; Obviously,&nbsp; to prevent cross-wires
 & shorts, &nbsp;‘cuts’ must be made to the horizontal Veroboard copper traces as
 denoted by &nbsp;“X”&nbsp; in the diagrams delow.
 
@@ -350,7 +350,7 @@ Number:             5678901234567890123456
    > The `L/R pin` &nbsp;(Left/Right) Channel Selection works as follows:<br/>
    >> LEFT &nbsp;&nbsp; – connect L/R to GND.<br/>
    >> RIGHT – connect L/R to VDD.
-   
+
    > [!NOTE]
    > Features:
    >> 1. Digital I2S interface with 24-bit accurate data<br/>
@@ -363,7 +363,7 @@ Number:             5678901234567890123456
 > [INMP441 I²S MEMS Mic Wiring Diagram](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/INMP441%20I%C2%B2S%20MEMS%20Mic%20Wiring%20Diagram.png)
 
 >**Download:**&nbsp; [INMP441-I2S-Mic-sample.ino &nbsp; (Visual “Audio Waveforms”)](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/code/INMP441-I2S-Mic-sample/INMP441-I2S-Mic-sample.ino)
-<hr><br/>
+<br/><hr>
 
  3. Wiring between ESP32-S3-WROOM-1 Development Board and the &nbsp; ***I²S MAX98357A Amplifier/Speaker:***
 
@@ -379,6 +379,14 @@ Number:             5678901234567890123456
   |                    |                                 |
   |    Audio ⧾         | Speaker Positive  (⧾)           |
   |    Audio ⧿         | Speaker Negative  (⧿)           |
+
+   > [!NOTE]
+   > Features:
+   >> 1. Wide Input Range: Accepts 8Khz~96Khz I²S sampling rate, catering to diverse audio needs.<br/>
+   >> 2. I²S Interface Compatibility: Supports 128 digital audio formats with a single I²S interface, simplifying connectivity.<br/>
+   >> 3. Plug-and-Play Convenience: No master clock required, easily integrates with Raspberry-Pi, Arduino, and more.<br/>
+   >> 4. Extended Operating Temperature: Functions reliably from -40℃ to +80℃, suitable for various environments.<br/>
+   >> 5. Max98357a Amplifier: High Efficiency Class D Amplifier, delivers 3.2W output with 90% efficiency for low power consumption.<br/>
 
 > [MAX98357A I²S Audio Amp Wiring Diagram](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/MAX98357A%20I²S%20Amp%20Wiring%20Diagram.png)
 
