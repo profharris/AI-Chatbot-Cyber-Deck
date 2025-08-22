@@ -353,12 +353,12 @@ Number:             5678901234567890123456
    
    > [!NOTE]
    > Features:
-   >> Digital I2S interface with 24-bit accurate data<br/>
-   >> High SNR of 61dBA<br/>
-   >> High sensitivity of -26dBFS<br/>
-   >> Consistent frequency response from 60Hz to 15kHz<br/>
-   >> Low power consumption, low current draw of 1.4mA<br/>
-   >> High PSR of -72 dBFS<br/>
+   >> 1. Digital I2S interface with 24-bit accurate data<br/>
+   >> 2. High SNR of 61dBA<br/>
+   >> 3. High sensitivity of -26dBFS<br/>
+   >> 4. Consistent frequency response from 60Hz to 15kHz<br/>
+   >> 5. Low power consumption, low current draw of 1.4mA<br/>
+   >> 6. High PSR of -72 dBFS<br/>
 
 > [INMP441 I²S MEMS Mic Wiring Diagram](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/INMP441%20I%C2%B2S%20MEMS%20Mic%20Wiring%20Diagram.png)
 
