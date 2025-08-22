@@ -15,8 +15,8 @@ https://github.com/78/xiaozhi-esp32
  5. I²C ***Stemma-Qt/Qwiic 2-port I²C interface:***
  6. Buttons [Vol_UP ⏶], [OK ⏴], [Volume ⏷]
  7. WS2812 NeoPixel ***RGB LED*** (RGB_BUILTIN)
+<hr><br/>
 
-<br/>
 ### MCU Development Board (ESP32-S3-WROOM-1):
 
 #### Espressif ESP-S3-DevKitC-1 &nbsp;—&nbsp; &nbsp;44-pins, 22-pin Headers
@@ -131,6 +131,7 @@ clone Development boards,&nbsp; and so will plug into the _inner/right_ of
 the Left-side headers. Most **ESP32-S3-WROOM-1** based Development Boards
 will plug into the _center_, Left-side header,&nbsp; leaving the _outside/left_
 header exposed for access to the Development Board GPIO pins.
+<br/>
 
 ### Hardware Components:
   1. YD-ESP32-S3 (ESP32-S3-WROOM-1 Dev) -or compatible
@@ -141,6 +142,7 @@ header exposed for access to the Development Board GPIO pins.
   6. 3W 4Ω Speaker
   7. I²C Qwiic/Stemma-Qt dual-port interface
   8. I²C Qwiic/Stemma-Qt sensors as desired
+<br/>
 
 ### Build Components:
   1. 1× Stripboard Veroboard (6.5×14.5cm) 24×56 2.54mm holes
@@ -155,6 +157,7 @@ header exposed for access to the Development Board GPIO pins.
  10. 5× 22-pin IPX Female headers      YD-ESP32-S3 (ESP32-S3-WROOM-1)
  11. 4× Buttons (tactile switches)     Vol_UP, Btn_OK, Vol_DN, Reset
  12. 1× Battery Power On/Off switch
+<br/>
 
 ### Vertical Header sockets: (11)
 
@@ -171,6 +174,7 @@ header exposed for access to the Development Board GPIO pins.
  |                            |                  |  (35,3)»(35,24) | •Yellow•
  |                            |                  |  (36,3)»(36,24) | •Green•
  | 6. SPI LCD 1.54in 240×240  |    8-pin header  |  (41,8)»(41,15) |
+<br/>
 
 ### Vertical Jumper wires: (24)
 
@@ -302,7 +306,7 @@ Column:             3333344444444445555555
 Number:             5678901234567890123456
 ————————————————————————————————————————————————————————————————————
 ```
-<br/><hr>
+<hr><br/>
 
 ## 【3】 Quick Wiring Guidelines:
 
@@ -332,7 +336,7 @@ Number:             5678901234567890123456
  > [SPI LCD 1.54in 240RGB×240 IPS TFT (ST7789) Wiring Diagram](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/LCD%201.54in%20240RGB×240%20IPS%20TFT%20(ST7789)%20Wiring%20Diagram.png)
 
 >**Download:**&nbsp; [GFX_ST7789_colorGraphicsDemo.ino &nbsp; (a dozen GFX graphics demos)](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/code/GFX_ST7789_colorGraphicsDemo/GFX_ST7789_colorGraphicsDemo.ino)
-<br/>
+<hr><br/>
 
  2. Wiring between ESP32-S3-WROOM-1 Development Board and the &nbsp; ***I²S INMP441 Microphone:***
     > (The MS3625 chip is Fully Compatible With the INMP441)
@@ -363,7 +367,7 @@ Number:             5678901234567890123456
 > [INMP441 I²S MEMS Mic Wiring Diagram](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/images/INMP441%20I%C2%B2S%20MEMS%20Mic%20Wiring%20Diagram.png)
 
 >**Download:**&nbsp; [INMP441-I2S-Mic-sample.ino &nbsp; (Visual “Audio Waveforms”)](https://github.com/profharris/ESP32-S3-1.54in-TFT-Expansion-Board-with-Speaker/blob/main/code/INMP441-I2S-Mic-sample/INMP441-I2S-Mic-sample.ino)
-<br/><hr>
+<hr><br/>
 
  3. Wiring between ESP32-S3-WROOM-1 Development Board and the &nbsp; ***I²S MAX98357A Amplifier/Speaker:***
 
